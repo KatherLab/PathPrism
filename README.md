@@ -62,7 +62,7 @@ python 2_SpatialBiomarker/tissue_fraction_entropy_calculation.py
 ```
 Outputs:
 - `{dataset}_tissue_fraction.csv` (per-WSI tissue ratios)
-- `{dataset}.csv` with per-class entropy metrics (scale=4)
+- `{dataset}.csv` with per-class entropy metrics 
 
 ### 4.2 Graph-based Spatial Features
 Single-tissue graphs and inter-tissue region-contact graphs can be computed from the label maps (argmax of probability maps). Example interfaces typically include:
