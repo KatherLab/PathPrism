@@ -52,7 +52,7 @@ Use `1_MacroNet/external_test.py` to evaluate generalization on external test se
 
 ## 4) Build Spatial Biomarkers from Segmentation
 
-### 4.1 Tissue Fractions and Entropy (directly from .npy)
+### 4.1 Tissue Fractions and Entropy
 ```bash
 python 2_SpatialBiomarker/tissue_fraction_entropy_calculation.py
 # In __main__, set:
