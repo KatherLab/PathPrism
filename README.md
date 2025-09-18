@@ -25,7 +25,7 @@ python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
 
 
 
----
+
 
 ## 1) WSI Semantic Decomposition
 Download the pre-extracted CRC100k UNI features from:
@@ -34,21 +34,20 @@ Download the pre-extracted CRC100k UNI features from:
 After downloading, extract the archive to `PathPrism/0_PrismNet/CRC100k_UNI`.
 Then run `0_PrismNet/prismnet_train_test.py` to train PrismNet. The trained model will be saved as `prismnet_linProbe.pt`.
 
----
+
 
 ## 2) Generate WSI Probability Maps
 First, use STAMP v1 (`https://github.com/KatherLab/STAMP/tree/v1`) to convert WSIs into UNI feature matrices. An example layout is provided in `0_PrismNet/WSI_UNI`.
 Next, use the trained PrismNet to batch-process the UNI feature matrices and obtain class-wise probability maps. An example output is shown in `0_PrismNet/WSI_probmap`.
 You can use `0_PrismNet/probmap_check.ipynb` to validate and visualize the outputs, and to derive a segmentation map from the probability maps.
 
----
+
 
 ## 3) Link Semantics and Prognosis
 MacroNet is designed to learn the relationship between spatial tissue semantics (from segmentation) and patient prognosis.
 Use `1_MacroNet/train_cv.py` to perform 5-fold cross-validation on the DACHS cohort.
 Use `1_MacroNet/external_test.py` to evaluate generalization on external test sets.
 
----
 
 ## 4) Build Spatial Biomarkers from Segmentation
 
@@ -88,7 +87,7 @@ Outputs:
 - Optional PNG visualizations and graph pickles (conditioned on node/edge count)
 - Summary CSVs: `SingleTissueGraphFeats_*` / `RegionGraphFeats_*` (with merged prognosis info)
 
----
+
 
 
 ## Citation & Contributions
