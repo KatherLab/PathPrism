@@ -37,14 +37,22 @@ Then run `0_PrismNet/prismnet_train_test.py` to train PrismNet. The trained mode
 
 ## 2) Generate WSI Probability Maps
 First, use STAMP v1 (`https://github.com/KatherLab/STAMP/tree/v1`) to convert WSIs into UNI feature matrices. An example layout is provided in `0_PrismNet/WSI_UNI`.
+
+
 Next, use the trained PrismNet to batch-process the UNI feature matrices and obtain class-wise probability maps. An example output is shown in `0_PrismNet/WSI_probmap`.
+
+
 You can use `0_PrismNet/probmap_check.ipynb` to validate and visualize the outputs, and to derive a segmentation map from the probability maps.
 
 
 
 ## 3) Link Semantics and Prognosis
 MacroNet is designed to learn the relationship between spatial tissue semantics (from segmentation) and patient prognosis.
+
+
 Use `1_MacroNet/train_cv.py` to perform 5-fold cross-validation on the DACHS cohort.
+
+
 Use `1_MacroNet/external_test.py` to evaluate generalization on external test sets.
 
 
