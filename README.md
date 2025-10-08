@@ -100,4 +100,6 @@ Outputs:
 ## Citation & Contributions
 If this repository helps your research, please consider citing it. Feedback via Issues/PRs is welcome.
 
+## License
+This repository is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
 
