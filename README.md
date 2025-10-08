@@ -1,5 +1,7 @@
 ## PathPrism: Spatial Biomarker Discovery via Interpretable Semantic Learning in Histopathology
 
+[![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
+
 
 ![PathPrism Overview](assets/figure1_new2.png)
 
@@ -100,6 +102,5 @@ Outputs:
 ## Citation & Contributions
 If this repository helps your research, please consider citing it. Feedback via Issues/PRs is welcome.
 
-## License
-This repository is licensed under the [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).
+
 
